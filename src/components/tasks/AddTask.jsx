@@ -40,8 +40,10 @@ class AddTask extends Component {
               id="task"
               onChange={this.handleChange}
             />
+                <small class="form-text text-muted">Add your task above...</small>
+
           </div>
-          <button type="submit" className="btn btn-primary">
+          <button type="submit" className="btn btn-outline-primary my-3">
             Add
           </button>
         </form>

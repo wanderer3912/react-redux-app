@@ -4,10 +4,12 @@ import Tasks from "../tasks/Tasks";
 import { connect } from "react-redux";
 import {Redirect} from "react-router-dom"
 
+
 const Dashboard = ({ uid }) => {
   if (!uid) return <Redirect to="/signin" />;
   return (
     <>
+   
       <AddTask />
       <Tasks />
     </>

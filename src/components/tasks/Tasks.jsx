@@ -7,22 +7,9 @@ import { firestoreConnect } from "react-redux-firebase";
 const Tasks = ({ tasks }) => {
   return (
     <>
-      <table
-        className="table table-dark container"
-        style={{ marginTop: "30px" }}
-      >
-        <thead>
-          <tr className="text-info">
-            <th scope="col">Tasks</th>
-            <th scope="col">Added On</th>
-            <th scope="col">Status</th>
-            <th scope="col">Delete</th>
-          </tr>
-        </thead>
-        <tbody>
+     
           {tasks && tasks.map((task) => <Task task={task} key={task.id} />)}
-        </tbody>
-      </table>
+        
     </>
   );
 };

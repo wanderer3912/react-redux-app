@@ -16,7 +16,23 @@ const Task = ({ task, removeTask, toggleChecked }) => {
 
   return (
     <>
-      <tr>
+   <div class="card" style={{width: "25rem", margin: "10px auto" , border: "3px solid lightgrey"}}>
+  <div class="card-body">
+    <h5 class="card-title">{task.task}</h5>
+    <h6 class="card-subtitle mb-2 text-muted my-3">TimeStamp:{moment(task.date.toDate()).calendar()} </h6>
+    <Check onClick={() => handleCheck(task)} checked={task.checked} />
+    <span
+            className="material-icons text-danger mx-5 my-3"
+            style={{ cursor: "pointer" }}
+            onClick={() => handleRemove(task)}
+          >
+            delete
+          </span>
+   
+  </div>
+</div>
+    
+      {/* <tr>
         <th>{task.task}</th>
         <td>{moment(task.date.toDate()).calendar()}</td>
         <td>
@@ -31,7 +47,7 @@ const Task = ({ task, removeTask, toggleChecked }) => {
             delete
           </span>
         </td>
-      </tr>
+      </tr> */}
     </>
   );
 };

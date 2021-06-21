@@ -54,7 +54,7 @@ class SignIn extends Component {
               onChange={this.handleChange}
             />
           </div>
-          <button type="submit" className="btn btn-primary">
+          <button type="submit" className="btn btn-primary my-3">
             SignIn
           </button>
         </form>
