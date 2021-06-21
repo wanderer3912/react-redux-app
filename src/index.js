@@ -26,7 +26,7 @@ const rrfProps = {
 };
 
 function AuthIsLoaded({ children }) {
-  const auth = useSelector(state => state.firebase.auth);
+  const auth = useSelector((state) => state.firebase.auth);
   if (!isLoaded(auth))
     return (
       <div className="text-center">
@@ -46,7 +46,7 @@ ReactDOM.render(
   <Provider store={store}>
     <ReactReduxFirebaseProvider {...rrfProps}>
       <AuthIsLoaded>
-      <App />
+        <App />
       </AuthIsLoaded>
     </ReactReduxFirebaseProvider>
   </Provider>,
