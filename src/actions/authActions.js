@@ -1,5 +1,5 @@
 export const signIn = (creds) => {
-  return (dispatch, { getFirebase }) => {
+  return (dispatch, getState, { getFirebase }) => {
     const firebase = getFirebase();
 
     firebase
@@ -15,7 +15,7 @@ export const signIn = (creds) => {
 };
 
 export const signOut = () => {
-  return (dispatch, { getFirebase }) => {
+  return (dispatch, getState, { getFirebase }) => {
     const firebase = getFirebase();
 
     firebase
