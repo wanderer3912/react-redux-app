@@ -6,7 +6,10 @@ const NavBar = () => {
   return (
     <>
       <nav className="navbar navbar-dark bg-dark d-flex justify-content-center">
-        <Link to="/" className="navbar-brand"></Link>
+        <Link to="/" className="navbar-brand">
+          <h3>ReactApp</h3>{" "}
+        </Link>
+
         <NavItems />
       </nav>
     </>
